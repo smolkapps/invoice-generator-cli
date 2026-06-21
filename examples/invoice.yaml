@@ -1,0 +1,30 @@
+number: INV-2026-0099
+issue_date: "2026-06-21"
+due_date: "2026-07-05"
+currency: EUR
+seller:
+  name: Bright Ideas Consulting
+  address: |-
+    10 Innovation Park
+    Dublin D02 XY12
+    Ireland
+  email: hello@brightideas.example
+client:
+  name: Initech GmbH
+  address: |-
+    Hauptstraße 7
+    10115 Berlin
+    Germany
+items:
+  - description: Strategy workshop (full day)
+    quantity: 2
+    unit_price: 1500.00
+  - description: Follow-up report
+    quantity: 1
+    unit_price: 750.00
+discount:
+  amount: 250.00
+  label: Workshop bundle
+tax_rate: 23
+notes: VAT reverse-charge may apply for EU B2B clients.
+terms: Net 14. Bank details provided separately.

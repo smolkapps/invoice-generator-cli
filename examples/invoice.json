@@ -1,0 +1,43 @@
+{
+  "number": "INV-2026-0042",
+  "issue_date": "2026-06-21",
+  "due_date": "2026-07-21",
+  "currency": "USD",
+  "seller": {
+    "name": "Acme Web Studio LLC",
+    "address": "123 Market Street\nSuite 400\nSan Francisco, CA 94103",
+    "email": "billing@acmewebstudio.example",
+    "phone": "+1 (415) 555-0100"
+  },
+  "client": {
+    "name": "Globex Corporation",
+    "address": "500 Enterprise Way\nMetropolis, NY 10001",
+    "email": "accounts.payable@globex.example"
+  },
+  "items": [
+    {
+      "description": "Website redesign — discovery & UX",
+      "quantity": 32,
+      "unit_price": 125.00
+    },
+    {
+      "description": "Front-end implementation (per hour)",
+      "quantity": 48,
+      "unit_price": 110.00
+    },
+    {
+      "description": "CMS integration & content migration",
+      "quantity": 1,
+      "unit_price": 2400.00
+    },
+    {
+      "description": "Accessibility audit (WCAG 2.1 AA)",
+      "quantity": 1,
+      "unit_price": 850.00
+    }
+  ],
+  "discount": { "percent": 10, "label": "Returning client (10%)" },
+  "tax_rate": 8.875,
+  "notes": "50% deposit was invoiced separately on 2026-05-15.",
+  "terms": "Payment due within 30 days. Late payments accrue 1.5% monthly interest. Bank transfer details on request."
+}

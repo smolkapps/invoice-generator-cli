@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-generator"
+version = "1.0.0"
+description = "Generate professional invoice PDFs and HTML from structured data (JSON/YAML/TOML), with exact Decimal money math and zero network access."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "smolkai", email = "smolkai@users.noreply.github.com" }]
+keywords = ["invoice", "pdf", "billing", "reportlab", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "reportlab>=4.0",
+    "pyyaml>=6.0",
+    "tomli>=2.0; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pypdf>=4.0"]
+
+[project.scripts]
+invoice-generator = "invoice_generator.cli:run"
+invgen = "invoice_generator.cli:run"
+
+[project.urls]
+Homepage = "https://github.com/smolkapps/invoice-generator"
+Source = "https://github.com/smolkapps/invoice-generator"
+
+[tool.setuptools]
+packages = ["invoice_generator"]
+
+[tool.setuptools.package-data]
+invoice_generator = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

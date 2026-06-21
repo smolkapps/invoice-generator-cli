@@ -1,0 +1,35 @@
+number = "INV-2026-0123"
+issue_date = "2026-06-21"
+due_date = "2026-08-20"
+currency = "JPY"
+tax_rate = 10
+
+[seller]
+name = "Sakura Design Co."
+address = "1-2-3 Shibuya\nTokyo 150-0002\nJapan"
+email = "info@sakura-design.example"
+
+[client]
+name = "Yoyodyne K.K."
+address = "4-5-6 Marunouchi\nTokyo 100-0005\nJapan"
+
+[[items]]
+description = "Logo design package"
+quantity = 1
+unit_price = 180000
+
+[[items]]
+description = "Brand guidelines document"
+quantity = 1
+unit_price = 95000
+
+[[items]]
+description = "Business card design (per set)"
+quantity = 3
+unit_price = 12000
+
+[discount]
+percent = 5
+
+notes = "Prices in Japanese yen (no minor units)."
+terms = "Payment due within 60 days by bank transfer."
